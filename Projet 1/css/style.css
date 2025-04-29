@@ -246,22 +246,119 @@ footer {
 
 /* Section 4 : Our projects */
 
-#projects{
+#projects {
   text-align: center;
 
-  .title{
+  .title {
     justify-self: center;
   }
 
-  .projects{
+  .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 50px 0 70px 0;
 
-    img{
+    img {
       height: 300px;
       object-fit: cover;
+    }
+  }
+}
+
+/* Section 5 : Contact us */
+
+#contact-us {
+  background: var(--light-grey);
+  margin-top: 80px;
+  padding: 30px 0;
+
+  .contact-us {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+    align-items: center;
+
+    article,
+    form {
+      padding: 30px;
+    }
+
+    article {
+      p {
+        display: grid;
+        grid-template-columns: 22px auto;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 0;
+
+        i {
+          justify-self: center;
+          font-size: 18px;
+          color: var(--green);
+        }
+
+        &:nth-child(1) {
+          padding-bottom: 35px;
+          display: block !important;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-left: 22px;
+
+      span {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &:nth-child(4){
+          flex-direction: row;
+          gap: 3px;
+          align-items: baseline;
+        }
+      }
+
+      label,
+      input,
+      textarea {
+        font-family: var(--open);
+        font-size: 16px;
+        font-weight: 400;
+
+        &::placeholder {
+          font-family: var(--open);
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+      }
+
+      input,
+      textarea{
+        padding: 10px 17px;
+        border-radius: 4px;
+        border: 1px solid #69727D;
+      }
+
+      textarea{
+        resize: none;
+        min-height: 108px;
+      }
+
+      input[type="submit"]{
+        margin: 0;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
     }
   }
 }

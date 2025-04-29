@@ -1,0 +1,155 @@
+/* Import fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Uniformisation document */
+
+:root {
+  /* fonts */
+  --prata: "Prata", serif;
+  --open: "Open Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  /* colors */
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #7a7a7a;
+  --light-pink: #fbebeb;
+  --pink: #ec4899;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+h1,
+h2 {
+  font-family: var(--prata);
+  font-weight: 400;
+  font-size: 35px;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: Prata;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+p {
+  font-family: var(--open);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+}
+
+a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+img {
+  width: 100%;
+}
+
+.container-1440 {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.button {
+  padding: 12px 24px;
+
+  &:hover {
+    background: var(--pink);
+    color: var(--white);
+  }
+}
+
+/* Header */
+
+header {
+  background: var(--light-pink);
+  padding: 15px;
+
+  .container-1440 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      max-width: 200px;
+    }
+
+    nav {
+      ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        li {
+          a {
+            padding: 12px 24px;
+            font-size: 16px;
+            color: var(--grey);
+
+            &:hover {
+              background: var(--pink);
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+
+    #burgermenu {
+      display: none;
+    }
+  }
+}
+
+/* Footer */
+
+footer {
+  background: var(--light-pink);
+  padding-top: 76px;
+  padding-bottom: 20px;
+
+  .container-1440 {
+    padding: 15px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        li {
+          a {
+            padding: 12px 24px;
+            font-size: 16px;
+            color: var(--grey);
+
+            &:hover {
+              background: var(--pink);
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
+}

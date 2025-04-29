@@ -1,0 +1,126 @@
+/* Import des fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Uniformisation document */
+
+:root {
+  /* fonts */
+  --roboto: "Roboto", sans-serif;
+  --marker: "Permanent Marker", cursive;
+  --open: "Open Sans", sans-serif;
+  /* colors */
+  --green: #006a19;
+  --blue: #02797e;
+  --light-grey: #f2f4f2;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+h1,
+h2 {
+  font-family: var(--marker);
+  color: var(--green);
+  font-size: 37px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: var(--marker);
+  color: var(--blue);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+p{
+  font-family: var(--open);
+}
+
+a {
+  font-family: var(--roboto);
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+}
+
+.container-1440{
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Header */
+
+header{
+  padding-top: 10px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  img{
+    max-width: 200px;
+  }
+
+  nav{
+    ul{
+      width: 730px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      padding: 0;
+
+      li{
+        a{
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--black);
+
+          &:hover{
+            color: var(--green);
+          }
+        }
+
+        .active{
+          color: var(--green);
+        }
+      }
+    }
+  }
+
+  #burgermenu{
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer{
+  text-align: center;
+  padding: 25px;
+
+  p,
+  a{
+    font-family: var(--open);
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  a:hover{
+    color: var(--green);
+  }
+}
+
+/* Main */

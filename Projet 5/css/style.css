@@ -247,6 +247,7 @@ footer {
   h2{
     text-align: center;
     margin-bottom: 70px;
+    text-transform: none;
   }
 
   div{
@@ -278,6 +279,102 @@ footer {
 
       .price-tag{
         padding: 0 12px 12px 12px;
+      }
+    }
+  }
+}
+
+/* Section 3 : About */
+
+#about{
+  background: var(--light-pink);
+  padding: 130px 0 80px 0;
+
+  .container-1440{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+
+    article{
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
+      .button{
+        background: var(--pink);
+        color: var(--white);
+
+        &:hover{
+          background: var(--white);
+          color: var(--pink);
+        }
+      }
+
+    }
+    
+    img{
+      border-radius: 12px;
+    }
+  }
+}
+
+/* Section 4 : Comments */
+
+#comments{
+  margin: 80px auto;
+
+  h2{
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 40px;
+
+    article{
+      box-shadow: 0px 0px 11px 7px #DADADA5E;
+      padding: 10px;
+      border-radius: 12px;
+
+      div{
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        img{
+          height: 80px;
+          width: 80px;
+          border-radius: 40px;
+          object-fit: cover;
+        }
+
+        span{
+          h3{
+            margin-bottom: 5px;
+          }
+          
+          span{
+            display: flex;
+            gap: 8px;
+
+            .on{
+              color: var(--pink);
+            }
+
+            .off{
+              color: var(--light-pink);
+            }
+          }
+        }
+      }
+
+      p{
+        margin-bottom: 15px;
       }
     }
   }

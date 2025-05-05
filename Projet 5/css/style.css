@@ -134,6 +134,7 @@ header {
   .button {
     background: var(--red);
     color: var(--white);
+    box-shadow: none;
 
     i {
       padding-right: 13px;
@@ -173,6 +174,66 @@ footer {
             }
           }
         }
+      }
+    }
+  }
+}
+
+/* Main */
+
+/* Section 1 : Discover */
+
+#discover{
+  background: url("/Projet\ 5/img/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+
+  #background{
+    height: 100%;
+    background-color: #fbebeb80;
+
+    .container-1440{
+      height: 100%;
+      text-align: center;
+      align-content: center;
+
+      h1,
+      p{
+        margin-bottom: 20px;
+      }
+
+      div{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        justify-self: center;
+
+        .button{
+          &:nth-child(1){
+            background: var(--pink);
+            color: var(--white);
+  
+            &:hover{
+              background: var(--white);
+              color: var(--pink);
+            }
+          }
+
+          &:nth-child(2){
+            background: var(--white);
+            color: var(--pink);
+
+            &:hover{
+              background: var(--pink);
+              color: var(--white);
+            }
+          }
+        }
+        
+        
       }
     }
   }

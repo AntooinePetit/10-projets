@@ -1,0 +1,90 @@
+/* Import fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Uniformisation document */
+
+:root {
+  /* Fonts */
+  --archivo: "Archivo", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  /* Colors */
+  --black: #000000;
+  --white: #ffffff;
+  --background-grey: #f1f1f1;
+  --border-grey: #69727d;
+  --grey: #7a7a7a;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-family: var(--archivo);
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--archivo);
+  font-weight: 600;
+  font-size: 35px;
+  color: var(--black);
+}
+
+h3 {
+  font-family: var(--archivo);
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--black);
+}
+
+a {
+  font-family: var(--archivo);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--archivo);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.container-1440{
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.black-button{
+  padding: 12px 24px;
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+
+  &:hover{
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+.white-button{
+  padding: 12px 24px;
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+
+  &:hover{
+    background: var(--black);
+    color: var(--white);
+  }
+}

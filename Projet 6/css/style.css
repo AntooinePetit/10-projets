@@ -134,6 +134,10 @@ header{
       }
     }
   }
+
+  #burgermenu{
+    display: none;
+  }
 }
 
 /* Footer */
@@ -389,3 +393,115 @@ footer{
   }
 }
 
+/* Responsive Tablette */
+
+@media screen and (max-width:1024px) {
+  /* Section 2 : About */
+
+  #about{
+    .container-1140{
+      grid-template-columns: 1fr;
+
+      article{
+        grid-row: 2;
+      }
+    }
+  }
+
+  /* Section 3 : Services */
+
+  #services{
+    grid-template-columns: 1fr;
+
+    > article{
+      grid-column: 1;
+    }
+
+    div{
+      grid-row: 2;
+    }
+  }
+
+  /* Section 5 : Contact */
+
+  #contact{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Mobile */
+
+@media screen and (max-width:767px) {
+  /* Header */
+
+  header{
+    nav{
+      display: none;
+    }
+
+    #burgermenu{display: block;}
+  }
+
+  /* Footer */
+
+  footer{
+    .container-1440{
+      flex-direction: column;
+      gap: 20px;
+
+      div{
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  /* Section 2 : About */
+
+  #about{
+    .container-1140{
+      div{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  /* Section 3 : Services */
+
+  #services{
+    div{
+      grid-template-columns: 1fr;
+
+      article{
+        grid-column: 1 !important;
+      }
+    }
+  }
+
+  /* Section 4 : Portfolio */
+
+  #portfolio{
+    .container-1140{
+      div{
+        grid-template-columns: 1fr;
+
+        img{
+          grid-column: 1 !important;
+        }
+      }
+    }
+  }
+
+  /* Section 5 : Contact */
+
+  #contact{
+    form{
+      grid-template-columns: 1fr;
+
+      textarea,
+      input[type="submit"]{
+        grid-column: 1;
+      }
+    }
+  }
+}

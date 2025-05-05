@@ -185,6 +185,7 @@ footer {
     div {
       display: flex;
       gap: 20px;
+      width: max-content;
 
       img {
         height: 500px;
@@ -333,6 +334,140 @@ footer {
         background: var(--pink);
         color: var(--black);
       }
+    }
+  }
+}
+
+/* Responsive Tablette */
+
+@media screen and (max-width:1024px) {
+  /* Section 1 : Discover */
+  
+  #discover{
+    .container-1440{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Section 2 : Our services */
+
+  #services{
+    div{
+      grid-template-columns: 1fr 1fr;
+
+      article:nth-child(3){
+        grid-column: 1 / 3;
+      }
+    }
+  }
+
+  /* Section 3 : Our portfolio */
+
+  #portfolio{
+    .container-1440{
+      div{
+        grid-template-columns: 1fr 1fr;
+
+        article:nth-child(3){
+          grid-column: 1 / 3;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Mobile */
+
+@media screen and (max-width:767px) {
+  /* Header */
+
+  header{
+    .container-1440{
+      nav,
+      .button{
+        display: none;
+      }
+
+      #burgermenu{
+        display: block;
+      }
+    }
+  }
+  
+  /* Footer */
+
+  footer{
+    .container-1440{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      nav{
+        ul{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          li{
+            a{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Section 1 : Discover */
+
+  #discover{
+    .container-1440{
+      div{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+
+        img:nth-child(1){
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  /* Section 2 : Our services */
+
+  #services{
+    div{
+      grid-template-columns: 1fr;
+      gap: 40px;
+
+      article:nth-child(3){
+        grid-column: 1;
+      }
+    }
+  }
+
+  /* Section 3 : Portfolio */
+
+  #portfolio{
+    .container-1440{
+      div{
+        grid-template-columns: 1fr;
+
+        article:nth-child(3){
+          grid-column: 1;
+        }
+      }
+    }
+  }
+
+  /* Section 4 : Get in touch */
+
+  #contact{
+    div{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
     }
   }
 }

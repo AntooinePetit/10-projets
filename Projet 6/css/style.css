@@ -28,6 +28,7 @@ h1 {
   font-weight: 600;
   font-size: 40px;
   color: var(--white);
+  text-transform: capitalize;
 }
 
 h2 {
@@ -57,6 +58,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   color: var(--grey);
+  line-height: 24px;
 }
 
 .container-1440{
@@ -65,11 +67,19 @@ p {
   padding: 0 15px;
 }
 
+.container-1140{
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+}
+
 .black-button{
+  display: block;
   padding: 12px 24px;
   background: var(--black);
   color: var(--white);
   border: 1px solid var(--black);
+  width: fit-content;
 
   &:hover{
     background: var(--white);
@@ -78,13 +88,196 @@ p {
 }
 
 .white-button{
+  display: block;
   padding: 12px 24px;
   background: var(--white);
   color: var(--black);
-  border: 1px solid var(--white);
+  width: fit-content;
 
   &:hover{
     background: var(--black);
     color: var(--white);
+  }
+}
+
+img{
+  width: 100%;
+}
+
+/* Header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px !important;
+
+  img{
+    max-width: 100px;
+  }
+
+  nav{
+    ul{
+      list-style: none;
+      padding: 0;
+      display: flex;
+
+      li{
+        a{
+          padding: 13px 20px;
+
+          &:hover{
+            background: var(--black);
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+
+footer{
+  background: var(--black);
+  padding-top: 80px;
+
+  .container-1440{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px !important;
+
+    img{
+      max-width: 100px;
+    }
+
+    div{
+      display: flex;
+      gap: 4px;
+
+      a{
+        color: var(--white);
+      }
+    }
+
+    p{
+      color: var(--white);
+      font-size: 14px;
+    }
+  }
+}
+
+/* Main */
+
+/* Section 1 : Discover */
+
+#discover{
+  height: 435px;
+  background: url("/Projet\ 6/img/about2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  div{
+    height: 100%;
+    align-content: center;
+    justify-items: center;
+    max-width: 650px;
+    margin: auto;
+
+    p{
+      color: var(--white);
+      margin: 25px auto;
+    }
+  }
+}
+
+/* Section 2 : About */
+
+#about{
+  background: var(--background-grey);
+  padding: 50px 0;
+
+  .container-1140{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+
+    article{
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+
+    div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 10px;
+      gap: 20px;
+
+      img{
+        height: 250px;
+        object-fit: cover;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+/* Section 3 : Our services */
+
+#services{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 50px auto;
+
+  > article{
+    grid-column: 2;
+    grid-row: 1;
+    
+    h2{
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin-bottom: 35px;
+    }
+
+    .black-button{
+      margin: auto;
+    }
+  }
+
+  div{
+    grid-column: 1;
+    grid-row: 1;
+
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    article{
+      background: var(--background-grey);
+      padding: 10px;
+
+      h3{
+        margin-bottom: 20px;
+      }
+
+      p{
+        margin-bottom: 15px;
+      }
+
+      &:nth-child(1),
+      &:nth-child(4){
+        grid-column: 1 / 3;
+      }
+    }
   }
 }

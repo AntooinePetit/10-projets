@@ -268,23 +268,23 @@ footer {
 
 /* Section 5 : Accessories */
 
-#accessories{
+#accessories {
   margin-top: 80px;
 
-  div:nth-child(1){
+  div:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: center;
 
-    article{
-      p{
+    article {
+      p {
         padding: 25px 0 35px 0;
       }
     }
   }
 
-  .container-1140{
+  .container-1140 {
     padding: 50px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -293,3 +293,22 @@ footer {
 }
 
 /* Section 6 : Sales */
+
+#sales {
+  margin-top: 80px;
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .big-text{
+    margin-bottom: 35px;
+  }
+
+  div {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}

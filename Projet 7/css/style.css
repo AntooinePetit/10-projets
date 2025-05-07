@@ -101,6 +101,24 @@ img {
 
 /* Réutilisables */
 
+/* En-tête section */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    max-width: 700px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/* Vignettes articles */
+
 .articles {
   border-radius: 12px;
   box-shadow: var(--shadow-box);
@@ -234,29 +252,44 @@ footer {
   }
 }
 
-/* Section 3 : Men's collection */
+/* Section 3 : Men's collection & Section 4 : Kid's collection */
 
-#men {
+#men,
+#kids {
   margin-top: 80px;
 
-  > div:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    div{
-      max-width: 700px;
-
-      h2{
-        margin-bottom: 20px;
-      }
-    }
-  }
-
-  div:nth-child(2){
+  div:nth-child(2) {
     padding: 50px 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 }
+
+/* Section 5 : Accessories */
+
+#accessories{
+  margin-top: 80px;
+
+  div:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+
+    article{
+      p{
+        padding: 25px 0 35px 0;
+      }
+    }
+  }
+
+  .container-1140{
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Section 6 : Sales */

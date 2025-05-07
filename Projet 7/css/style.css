@@ -98,3 +98,90 @@ img {
   font-family: var(--prata);
   font-size: 24px;
 }
+
+/* Header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+    max-width: 180px;
+    padding: 15px 0;
+  }
+
+  nav{
+    ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      li{
+        a{
+          padding: 13px 20px;
+          color: var(--grey);
+
+          &:hover{
+            background: var(--black);
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  div{
+    display: flex;
+    gap: 5px;
+
+    a{
+      padding: 8px;
+      padding-right: 14px;
+      color: var(--grey);
+
+      i{
+        font-size: 24px;
+      }
+    }
+  }
+
+  #burgermenu{
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer{
+  background: var(--black);
+  padding-top: 80px;
+  padding-bottom: 15px;
+
+  p{
+    max-width: 270px;
+    margin: auto;
+    color: var(--white);
+    text-align: center;
+  }
+}
+
+/* Main */
+
+/* Section 1 : Discover */
+
+#discover{
+  text-align: center;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/background1.jpg");
+  background-position: center;
+  background-size: cover;
+  align-content: center;
+  
+  p{
+    color: var(--white);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
